@@ -24,6 +24,7 @@ pipeline {
           echo params.GITHUB_TEAM;
           echo env.USER_NAME;
           echo GITHUB_KEY_ID;
+        bat "npm install"
         bat "node index.mjs ${env.USER_NAME} ${params.GITHUB_TEAM} ${GITHUB_KEY_ID}";
       }
     }
