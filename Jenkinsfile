@@ -24,7 +24,7 @@ pipeline {
           echo params.GITHUB_TEAM;
           echo env.USER_NAME;
           echo GITHUB_KEY_ID;
-        bat "node C:\\skillsoft\\github_selfregister\\index.mjs ${env.USER_NAME} ${params.GITHUB_TEAM} ${GITHUB_KEY_ID}";
+        bat "node index.mjs ${env.USER_NAME} ${params.GITHUB_TEAM} ${GITHUB_KEY_ID}";
       }
     }
   }
