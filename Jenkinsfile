@@ -4,7 +4,7 @@ pipeline {
         PATH = "C:\\WINDOWS\\SYSTEM32"
         GITHUB_KEY_ID     = credentials('github_key')
     }
-  tools {nodejs "NodeJSInstall"}
+ // tools {nodejs "NodeJSInstall"}
  
   stages {
     stage('AddUser') {
